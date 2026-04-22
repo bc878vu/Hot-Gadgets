@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Phone Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">📱 SmartFinder</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="policy.html">Policy</a>
+    <button class="login-btn">Login</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Find Your Perfect Smartphone</h1>
+  <p>Search and explore latest mobile devices</p>
+</section>
+
+<section class="search">
+  <input id="search-input" type="text" placeholder="Search phone...">
+  <button id="search-btn">Search</button>
+</section>
+
+<div id="spinner" class="hidden">Loading...</div>
+
+<section id="phones-container" class="grid"></section>
+
+<button id="show-all-btn" class="hidden">Show All</button>
+
+<!-- DETAILS MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="modal hidden">
+  <div class="modal-content">
+    <span onclick="closeLogin()" id="close-modal">&times;</span>
+    <h2>Login</h2>
+    <input id="username" type="text" placeholder="Username" class="input">
+    <input id="password" type="password" placeholder="Password" class="input">
+    <button class="login-submit" onclick="loginUser()">Login</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <h3>📱 SmartFinder</h3>
+  <p>Your trusted platform to explore latest smartphones</p>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="policy.html">Privacy</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 SmartFinder | All Rights Reserved
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
